@@ -37,7 +37,7 @@ namespace Cinema_management_API.Controllers
             return Created();
         }
         [HttpPut]
-        public IActionResult Edit(CreateHallModel hall)
+        public IActionResult Edit(EditHallModel hall)
         {
             context.Halls.Update(mapper.Map<Hall>(hall));
             context.SaveChanges();

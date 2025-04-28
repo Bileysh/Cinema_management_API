@@ -38,7 +38,7 @@ namespace Cinema_management_API.Controllers
             return Created();
         }
         [HttpPut]
-        public IActionResult Edit(CreateMovieModel movie)
+        public IActionResult Edit(EditMovieModel movie)
         {
             context.Movies.Update(mapper.Map<Movie>(movie));
             context.SaveChanges();
