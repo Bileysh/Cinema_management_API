@@ -14,6 +14,7 @@ namespace DataAccess.Entities
         public string Type { get; set; }
         public int NumberOfBonuses { get; set; }
 
+        public int? DiscountId { get; set; }
         public Discount? Discount { get; set; }
 
         public ICollection<Sales>? Sales { get; set; }

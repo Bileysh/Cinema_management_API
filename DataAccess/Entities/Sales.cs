@@ -10,6 +10,7 @@ namespace DataAccess.Entities
     public class Sales
     {
         public int Id { get; set; }
+        public int UserId { get; set; }
         public User User { get; set; }
         public int AmountOfTickets { get; set; }
         public int SumOfPayment { get; set; }
